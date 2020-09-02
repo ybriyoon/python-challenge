@@ -43,6 +43,6 @@ with open(csvpath) as csvfile:
     import sys
     with open("PyBank.txt", "w") as outputfile: 
         outputfile.write(f'Total: $ {sum(profitloss)}\n' ) 
-        outputfile.write(f'Average Change: $ {avgchange:,.2F}\n' )
-        outputfile.write(f'Total: $ {sum(profitloss)}\n' ) 
-        outputfile.write(f'Average Change: $ {avgchange}\n' )
+        outputfile.write(f'Average Revenue Change: $ {avgchange:,.2F}\n' )
+        outputfile.write(f'Greatest Increase in Revenue: {maxchangedate,"($", maxchange,")"}\n' ) 
+        outputfile.write(f'Greatest Decrease in Revenue: {minchangedate, "($", minchange,")"}\n' )
